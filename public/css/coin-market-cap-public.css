@@ -1,0 +1,73 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.coinmarket-shortcode{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 25px;
+	padding: 25px 0;
+	background: #b6d5d6;
+	border-radius: 5px;
+}
+@media (max-width: 768px) {
+	.coinmarket-shortcode{
+		flex-direction: column;
+	}
+}
+
+.coinmarket-shortcode--from,
+.coinmarket-shortcode--to{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+@media (max-width: 768px) {
+	.coinmarket-shortcode--from,
+	.coinmarket-shortcode--to {
+		width: 100%;
+	}
+}
+
+.coinmarket-shortcode--from input,
+.coinmarket-shortcode--to input{
+	width: 50%;
+}
+
+.coinmarket-shortcode--from select,
+.coinmarket-shortcode--to select{
+	width: 200px;
+	text-align: center;
+	padding: 5px;
+}
+@media (max-width: 768px) {
+	.coinmarket-shortcode--from select,
+	.coinmarket-shortcode--to select{
+		width: 150px;
+	}
+}
+
+.coinmarket-shortcode--from input,
+.coinmarket-shortcode--to input{
+	border: 1px solid #000;
+	padding: 5px;
+	background: #fff;
+}
+
+.coinmarket-shortcode--from select,
+.coinmarket-shortcode--to select{
+	border: 1px solid #000;
+	background: #fff;
+}
+
+.coinmarket-shortcode .history{
+	width: 100%;
+	margin: 25px;
+	color: #000;
+}
+.coinmarket-shortcode .history .row{
+	margin: 10px;
+}
